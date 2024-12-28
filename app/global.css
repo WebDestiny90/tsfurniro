@@ -1,0 +1,70 @@
+:root {
+  --primary: #b88e2f;
+} 
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: min(100% - 15px, 1320px);
+  margin-inline: auto;
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url(../public/assets/fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(../public/assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url(../public/assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url(../public/assets/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(../public/assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(../public/assets/fonts/Montserrat-Bold.ttf);
+}
