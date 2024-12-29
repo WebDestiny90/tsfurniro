@@ -1,0 +1,13 @@
+.sliderContainer {
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+  height: 100%;
+}
+
+.swiperImage {
+  width: 100%;
+  height: auto;
+}

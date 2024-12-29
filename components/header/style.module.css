@@ -1,5 +1,5 @@
 .header {
-  padding-block: 1.813rem;
+  padding-block: 1.5rem;
 }
 
 .headerItems,
@@ -21,6 +21,11 @@
 .headerLink {
   font: 500 1rem "Poppins-Medium", sans-serif;
   color: #000;
+  transition: all 0.3s;
+}
+
+.headerLink:hover {
+  color: var(--primary, #b88e2f);
 }
 
 @media screen and (max-width: 786px) {
