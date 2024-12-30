@@ -6,6 +6,11 @@ import Image from "next/image"
 import styles from "./style.module.css"
 import 'swiper/css';
 import 'swiper/css/effect-fade';
+import heroimg1 from "../../public/assets/img/heroimg.png"
+import heroimg2 from "../../public/assets/img/heroimg2.webp"
+import heroimg3 from "../../public/assets/img/heroimg3.jpg"
+import heroimg4 from "../../public/assets/img/heroimg4.png"
+import heroimg5 from "../../public/assets/img/heroimg5.jpg"
 
 const MainSwiper = () => {
   const [init, setInit] = useState(false)
@@ -26,19 +31,19 @@ const MainSwiper = () => {
         className={styles.swiper}
       >
         <SwiperSlide className={styles.swiperSlide}>
-          <Image className={styles.swiperImage} src="/assets/img/heroimg.png" alt="Furniture image" width={1000} height={1000} />
+          <Image className={styles.swiperImage} src={heroimg1} alt="Furniture image" />
         </SwiperSlide>
         <SwiperSlide className={styles.swiperSlide}>
-          <Image className={styles.swiperImage} src="/assets/img/heroimg2.webp" alt="Furniture image" width={1000} height={1000} />
+          <Image className={styles.swiperImage} src={heroimg2} alt="Furniture image" />
         </SwiperSlide>
         <SwiperSlide className={styles.swiperSlide}>
-          <Image className={styles.swiperImage} src="/assets/img/heroimg3.jpg" alt="Furniture image" width={1000} height={1000} />
+          <Image className={styles.swiperImage} src={heroimg3} alt="Furniture image" />
         </SwiperSlide>
         <SwiperSlide className={styles.swiperSlide}>
-          <Image className={styles.swiperImage} src="/assets/img/heroimg4.png" alt="Furniture image" width={1000} height={1000} />
+          <Image className={styles.swiperImage} src={heroimg4} alt="Furniture image" />
         </SwiperSlide>
         <SwiperSlide className={styles.swiperSlide}>
-          <Image className={styles.swiperImage} src="/assets/img/heroimg5.jpg" alt="Furniture image" width={1000} height={1000} />
+          <Image className={styles.swiperImage} src={heroimg5} alt="Furniture image" />
         </SwiperSlide>
       </Swiper>
     </div>
