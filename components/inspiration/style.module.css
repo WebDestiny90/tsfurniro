@@ -1,0 +1,170 @@
+.article {
+  background-color: #FCF8F3;
+  margin-top: 3rem;
+  padding: 6rem 0;
+}
+
+.articleItems,
+.swiperContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.articleTitle {
+  color: #3a3a3a;
+  font: 2.5rem/120% "Poppins-Bold", sans-serif;
+  max-width: 26rem;
+}
+
+.articleText {
+  color: #616161;
+  font: 1rem/150% "Poppins-Medium", sans-serif;
+  max-width: 23rem;
+  margin-bottom: 1.5rem;
+}
+
+.articleLink {
+  color: #fff;
+  background-color: var(--primary, #b88e2f);
+  font: 1rem/150% "Poppins-SemiBold", sans-serif;
+  padding: 0.75rem 2.25rem;
+}
+
+.swiperContainer {
+  width: 50%;
+  height: 486px;
+}
+
+.firstSwiperContainer,
+.secondSwiperContainer {
+  width: 70%;
+  height: 582px;
+}
+
+.secondSwiperItem {
+  padding-left: 45px;
+}
+
+.firstSlider {
+  position: relative;
+  filter: drop-shadow(0px 0px 7px rgba(83, 83, 83, 0.40));
+}
+
+.swiperItems {
+  width: 232px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.68);
+  backdrop-filter: blur(3px);
+  opacity: 0.5px;
+  padding: 32px;
+  bottom: 1.5rem;
+  left: 1.5rem;
+}
+
+.swiperText {
+  font: 1rem/150% "Poppins-Medium", sans-serif;
+  color: #616161;
+  margin-bottom: 8px;
+}
+
+.swiperTitle {
+  font: 1.75rem/120% "Poppins-SemiBold", sans-serif;
+  color: #3a3a3a; 
+}
+
+.swiperLinkItem {
+  position: absolute;
+  padding: 10px;
+  color: #fff;
+  background-color: var(--primary);
+  left: 255px;
+  bottom: 24px;
+  font-size: 1.7rem;
+}
+
+.secondSwiperItem {
+  filter: drop-shadow(0px 0px 7px rgba(83, 83, 83, 0.40));
+}
+
+@media (max-width: 767px) {
+  .article {
+    margin-top: 1rem;
+    padding: 1rem 0;
+  }
+  
+  .articleItems,
+  .swiperContainer {
+    flex-direction: column;
+  }
+
+  .articleTitle {
+    font-size: clamp(1.8rem, 1.2989rem + 2.5056vw, 2.5rem);
+  }
+
+  .articleText {
+    font-size: clamp(0.8rem, 0.6568rem + 0.7159vw, 1rem);
+  }
+
+  .articleLink {
+    font-size: 0.775rem;
+    padding: 0.5rem 1.7rem;
+  }
+
+  .swiperContainer {
+    width: 100%;
+    height: 100%;
+  }
+
+  .firstSwiperContainer {
+    margin-top: 2rem;
+  }
+  
+  .firstSwiperContainer,
+  .secondSwiperContainer {
+    width: 100%;
+  }
+  
+  .secondSwiperItem {
+    padding-left: 0;
+    margin-top: 1.5rem;
+  }
+
+  .sliderImg,
+  .secondSliderImg {
+    width: 100%;
+  }
+
+  .swiperItems {
+    width: 10rem;
+    padding: 1rem;
+  }
+  
+  .swiperText {
+    font-size: 0.7rem;
+    margin-bottom: 2px;
+  }
+  
+  .swiperTitle {
+    font-size: 1rem;
+  }
+  
+  .swiperLinkItem {
+    padding: 5px;
+    left: 11.5rem;
+    font-size: 1.2rem;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
