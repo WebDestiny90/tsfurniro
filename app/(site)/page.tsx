@@ -2,6 +2,8 @@ import Link from "next/link"
 import styles from "./page.module.css"
 import MainSwiper from "../../components/swiper/MainSwiper"
 import Browse from "@/components/browse/Browse"
+import Products from "@/components/products/Products"
+import Inspiration from "@/components/inspiration/Inspiration"
 
 const page = () => {
   return (
@@ -20,6 +22,8 @@ const page = () => {
         </div>
       </main>
       <Browse />
+      <Products />
+      <Inspiration />
     </>
   )
 }
