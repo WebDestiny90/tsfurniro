@@ -4,6 +4,7 @@ import MainSwiper from "../../components/swiper/MainSwiper"
 import Browse from "@/components/browse/Browse"
 import Products from "@/components/products/Products"
 import Inspiration from "@/components/inspiration/Inspiration"
+import Share from "@/components/share/Share"
 
 const page = () => {
   return (
@@ -24,6 +25,7 @@ const page = () => {
       <Browse />
       <Products />
       <Inspiration />
+      <Share />
     </>
   )
 }
