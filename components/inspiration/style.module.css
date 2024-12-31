@@ -158,13 +158,159 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .article {
+    margin-top: 1.5rem;
+    padding: 1.5rem 0;
+  }
+  
+  .articleItems {
+    flex-direction: column;
+  }
+
+  .articleTitle {
+    font-size: clamp(1.8rem, 1.2989rem + 2.5056vw, 2.5rem);
+  }
+
+  .articleText {
+    font-size: clamp(0.8rem, 0.6568rem + 0.7159vw, 1rem);
+  }
+
+  .articleLink {
+    font-size: 0.875rem;
+    padding: 0.8rem 2rem;
+  }
+
+  .swiperContainer {
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+  }
+
+  .firstSwiperContainer {
+    margin-top: 2rem;
+  }
+  
+  .firstSwiperContainer,
+  .secondSwiperContainer {
+    width: 50%;
+  }
+  
+  .secondSwiperItem {
+    padding-left: 0;
+    margin-top: 1.5rem;
+  }
+
+  .sliderImg,
+  .secondSliderImg {
+    width: 100%;
+  }
+
+  .swiperItems {
+    width: 10rem;
+    padding: 1rem;
+  }
+  
+  .swiperText {
+    font-size: 0.7rem;
+    margin-bottom: 2px;
+  }
+  
+  .swiperTitle {
+    font-size: 1rem;
+  }
+  
+  .swiperLinkItem {
+    padding: 5px;
+    left: 11.5rem;
+    font-size: 1.2rem;
+  }
 
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .article {
+    margin-top: 1.5rem;
+    padding: 1.5rem 0;
+  }
+  
+  .articleItems {
+    flex-direction: column;
+  }
+
+  .articleTitle {
+    font-size: clamp(1.8rem, 1.2989rem + 2.5056vw, 2.5rem);
+  }
+
+  .articleText {
+    font-size: clamp(0.8rem, 0.6568rem + 0.7159vw, 1rem);
+  }
+
+  .articleLink {
+    font-size: 0.875rem;
+    padding: 0.8rem 2rem;
+  }
+
+  .swiperContainer {
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+  }
+
+  .firstSwiperContainer {
+    margin-top: 2rem;
+  }
+  
+  .firstSwiperContainer,
+  .secondSwiperContainer {
+    width: 50%;
+  }
+  
+  .secondSwiperItem {
+    padding-left: 0;
+    margin-top: 1.5rem;
+  }
+
+  .sliderImg,
+  .secondSliderImg {
+    width: 100%;
+  }
+
+  .swiperItems {
+    width: 10rem;
+    padding: 1rem;
+  }
+  
+  .swiperText {
+    font-size: 0.7rem;
+    margin-bottom: 2px;
+  }
+  
+  .swiperTitle {
+    font-size: 1rem;
+  }
+  
+  .swiperLinkItem {
+    padding: 5px;
+    left: 11.5rem;
+    font-size: 1.2rem;
+  }
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px)and (max-width: 1350px) {
+  .articleItems,
+  .swiperContainer {
+    align-items: center;
+    justify-content: stretch;
+  }
+  
+  .firstSwiperContainer,
+  .secondSwiperContainer {
+    width: 71%;
+  }
+  
+  .secondSwiperItem {
+    padding-left: 0;
+  }
 
 }
