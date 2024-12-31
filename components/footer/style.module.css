@@ -1,0 +1,128 @@
+.footer {
+  border-top: 1px solid #c0bfbf;
+  padding: 5rem 0;
+  margin-top: 3rem;
+}
+
+.footerItems {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerTitle {
+  color: #000;
+  font: 1.5rem "Poppins-Bold", sans-serif;
+  margin-bottom: 3.125rem;
+}
+
+.footerAdress {
+  color: #9f9f9f;
+  max-width: 17.8rem;
+  font: 1rem "Poppins-Regular", sans-serif;
+}
+
+.footerLinkText,
+.footerHelpText,
+.footerNewsText {
+  margin-bottom: 3rem;
+}
+
+.footerLinkText,
+.footerLinksItems,
+.footerHelpText,
+.footerNewsText {
+  font: 1rem "Poppins-Medium", sans-serif;
+  color: #9f9f9f;
+}
+
+.footerLinksItems {
+  color: #000;
+  display: block;
+  width: fit-content;
+  transition: all 0.3s;
+}
+
+.footerLinksItems,
+.footerHelpLinksItems:not(:last-child) {
+  margin-bottom: 2.8rem;
+}
+
+.footerLinksItems:hover {
+  color: var(--primary, #b88e2f);
+}
+
+.footerInput {
+  color: #9f9f9f;
+  font: 0.875rem "Poppins-Regular", sans-serif;
+  outline: none;
+  border-bottom: 1px solid #000;
+  margin-right: 10px;
+}
+
+.subscribeButton {
+  color: #000;
+  font: 0.875rem "Poppins-Medium", sans-serif;
+  border-bottom: 1px solid #000;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.footerEnd {
+  color: #000;
+  font: 1rem "Poppins-Regular", sans-serif;
+  border-top: 1px solid #c0bfbf;
+  display: block;
+  padding: 30px 0 0;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 1rem 0;
+    margin-top: 1.2rem;
+  }
+
+  .footerItems {
+    flex-wrap: wrap;
+  }
+
+  .footerTitle {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .footerAdress {
+    text-align: center;
+    margin: 0 0 20px 28px;
+  }
+
+  .footerLinkText,
+  .footerHelpText,
+  .footerNewsText {
+    margin-bottom: 1.3rem;
+  }
+
+  .footerLinksItems {
+   margin-bottom: 1.8rem;
+  }
+
+  .footerNewsText,
+  .footerEnd {
+    text-align: center;
+  }
+
+  .subscribeLink {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
