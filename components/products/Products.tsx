@@ -4,13 +4,13 @@ import Link from "next/link"
 import axios from "axios"
 import { productsInfo } from "@/src/Types"
 
-const url = 'https://json-server-vercel-furniro.vercel.app/OurProducts'
 
-const Products = async () => {
-  const { data } = await axios.get(url)
+
+const Products = () => {
+
   return (
     <section className={styles.products}>
-      <div className="container">
+      {/* <div className="container">
         <div className={styles.productsItems}>
           <h2 className={`${styles.productsTitle} ${styles.colorGray}`}>Our Products</h2>
           <div className={styles.mainGrid}>
@@ -41,10 +41,11 @@ const Products = async () => {
             }
           </div>
           <div className={`${styles.showMoreLink} ${styles.flex} ${styles.justifyCenter}`}>
-            <Link className={`${styles.productShow} ${styles.font}`} href="/">Show More</Link>
+            <Link className={`${styles.productShow} ${styles.font}`} href="/shop">Show More</Link>
           </div>
         </div>
-      </div>
+      </div> */}
+      PRODUCTSSSSSSSSSSSSSSSSSSSSSSSSS
     </section >
   )
 }
