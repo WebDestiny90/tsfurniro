@@ -1,0 +1,91 @@
+.shopItems {
+  background: url(../../../public/assets/img/shopimg.png) no-repeat center bottom/ cover;
+  padding: 7.5rem 0;
+  margin-bottom: 2rem;
+}
+
+.shopTitle {
+  color: #000;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.shopTextsBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeText {
+  color: #000;
+  font-size: 1rem;
+  font-family: "Poppins-Medium", sans-serif;
+}
+
+.arrowImage {
+  margin-inline: 6px;
+}
+
+.shopText {
+  color: #000;
+  font-size: 1rem;
+  font-family: "Poppins-Light", sans-serif
+}
+
+.colorGray {
+  color: #3a3a3a;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  gap: 2rem 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.gridItems {
+  width: 17.8rem;
+}
+
+.shadow {
+  filter: drop-shadow(0px 0px 7px rgba(3, 60, 70, 0.4));
+}
+
+.gridImage {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+
+.gridInfo {
+  background-color: #F4F5F7;
+  text-align: center;
+  padding-block: 1.5rem;
+}
+
+.gridTitle {
+  font: 1.5rem/120% "Poppins-SemiBold", sans-serif;
+}
+
+@media (max-width: 767px) {
+  .mainGrid {
+    place-items: center;
+    gap: 1rem 0rem;
+    margin-bottom: 1.2rem;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
