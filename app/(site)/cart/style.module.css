@@ -1,6 +1,6 @@
 .cartItems {
   background: url(../../../public/assets/img/shopimg.png) no-repeat center bottom/ cover;
-  padding: 6rem 0;
+  padding: 5rem 0;
 }
 
 .logoImage {
@@ -78,7 +78,7 @@
 .producPriceInfo,
 .productQuantityInfo,
 .productSubtotalInfo {
-  width: 25%; /* Установите фиксированную ширину для каждого элемента */
+  width: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,4 +155,31 @@
 .cartButton:hover {
   color: var(--primary);
   border-color: var(--primary);
+}
+
+.featuresbox {
+  background-color: #faf3ea;
+  padding-block: 4rem;
+  margin-top: 6rem;
+}
+
+.featuresContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.featuresTitle {
+  font: 1.563rem/150% "Poppins-SemiBold", sans-serif;
+  color: #242424;
+}
+
+.featuresDescription {
+  font: 1.25rem/150% "Poppins-Medium", sans-serif;
+  color: #898989;
 }
