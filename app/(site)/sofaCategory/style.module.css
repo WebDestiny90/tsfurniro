@@ -1,0 +1,45 @@
+.mainGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  gap: 2rem 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.gridItems {
+  width: 17.8rem;
+}
+
+.shadow {
+  filter: drop-shadow(0px 0px 7px rgba(3, 60, 70, 0.4));
+}
+
+.gridImage {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+
+.gridInfo {
+  background-color: #F4F5F7;
+  text-align: center;
+  padding: 1.5rem 0.8rem;
+}
+
+.gridTitle {
+  font: 1rem/120% "Poppins-SemiBold", sans-serif;
+  text-align: left;
+}
+
+.gridDesc {
+  font: 1rem/150% "Poppins-Medium", sans-serif;
+  color: #898989;
+  margin-block: 0.5rem;
+  text-align: left;
+}
+
+.gridPrice {
+  font: 1.25rem/150% "Poppins-SemiBold", sans-serif;
+  color: #3a3a3a;
+  text-align: left;
+}

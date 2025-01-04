@@ -1,0 +1,40 @@
+.descriptionContainer {
+  border-top: 2px solid #d9d9d9;
+  margin-top: 7rem;
+}
+
+.descriptionTitleBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2.5rem;
+}
+
+.descriptionFirstTitle,
+.descriptionSecondTitle,
+.descriptionThirdTitle {
+  font: 1.5rem "Poppins-Regular", sans-serif;
+  color: #9f9f9f;
+}
+
+.descriptionTextBox {
+  width: 64rem;
+  margin: 0 auto;
+}
+
+.descriptionFirstText,
+.descriptionSecondText,
+.descriptionThirdText {
+font: 1rem "Poppins-Regular", sans-serif;
+text-align: justify;
+color: #9f9f9f;
+}
+
+.descriptionTitleBox h2 {
+  cursor: pointer;
+}
+
+.descriptionTitleBox h2.active {
+  font-weight: bold;
+  color: #000;
+}

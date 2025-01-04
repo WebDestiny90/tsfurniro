@@ -1,0 +1,34 @@
+.categoryItems {
+  background: url(../../public/assets/img/shopimg.png) no-repeat center bottom/ cover;
+  padding: 7.5rem 0;
+  margin-bottom: 2rem;
+}
+
+.categoryTitle {
+  color: #000;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.categoryTextsBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeText {
+  color: #000;
+  font-size: 1rem;
+  font-family: "Poppins-Medium", sans-serif;
+}
+
+.arrowImage {
+  margin-inline: 6px;
+}
+
+.categoryText {
+  color: #000;
+  font-size: 1rem;
+  font-family: "Poppins-Light", sans-serif
+}

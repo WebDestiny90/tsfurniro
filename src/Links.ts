@@ -13,7 +13,7 @@ export const secondSlider = [
 ]
 
 export const CategoryLinks = [
-  { id: 1, to: "", imageSrc: "/assets/img/category/SofaCategory.webp", title: "Sofas & Couches", alt: "Sofa" },
+  { id: 1, to: "/sofaCategory", imageSrc: "/assets/img/category/SofaCategory.webp", title: "Sofas & Couches", alt: "Sofa" },
   { id: 2, to: "", imageSrc: "/assets/img/category/LivingCategory.webp", title: "Living Room", alt: "Living Room" },
   { id: 4, to: "", imageSrc: "/assets/img/category/SectionalsCategory.webp", title: "Sectionals", alt: "Sectionals" },
   { id: 5, to: "", imageSrc: "/assets/img/category/CoffeeCategory.webp", title: "Coffee Tables", alt: "Coffee Tables" },

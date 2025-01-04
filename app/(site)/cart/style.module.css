@@ -1,0 +1,158 @@
+.cartItems {
+  background: url(../../../public/assets/img/shopimg.png) no-repeat center bottom/ cover;
+  padding: 6rem 0;
+}
+
+.logoImage {
+  display: block;
+  margin: auto;
+}
+
+.cartTitle {
+  color: #000;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.cartTextsBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeText {
+  color: #000;
+  font-size: 1rem;
+  font-family: "Poppins-Medium", sans-serif;
+}
+
+.arrowImage {
+  margin-inline: 6px;
+}
+
+.cartText {
+  color: #000;
+  font-size: 1rem;
+  font-family: "Poppins-Light", sans-serif
+}
+
+.cartMain {
+  display: flex;
+}
+
+.cartProductsContainer {
+  width: 58rem;
+  margin-top: 2rem;
+}
+
+.productsDescrip {
+  background-color: #f9f1e7;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 0;
+}
+
+.fonts,
+.subtotalsPrice {
+  font: 1rem "Poppins-Medium", sans-serif;
+}
+
+.productInfo {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.infoFonts,
+.totalsPrice,
+.cartButton {
+  font-family: "Poppins-Regular", sans-serif;
+}
+
+.colorGrey {
+  color: #9f9f9f;
+}
+
+.productNameInfo,
+.producPriceInfo,
+.productQuantityInfo,
+.productSubtotalInfo {
+  width: 25%; /* Установите фиксированную ширину для каждого элемента */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productNameInfo {
+  width: 6.5rem;
+  margin-left: 1.6rem;
+}
+
+.producPriceInfo {
+  margin-right: 3.8rem;
+}
+
+.productQuantityInfo {
+  margin-right: 5rem;
+  padding: 4px 12px;
+  border: 1px solid black;
+  border-radius: 6px;
+  width: 3.5%;
+}
+
+.productSubtotalInfo {
+  margin-right: 1rem;
+}
+
+.cartTotal {
+  background-color: #f9f1e7;
+  padding: 15px 4.20rem 2.62rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 1.8rem;
+  height: 24rem;
+}
+
+.totalTitle {
+  font: 2rem "Poppins-SemiBold", sans-serif;
+  padding-bottom: 3.8rem;
+}
+
+.totalsTexts {
+  display: flex;
+}
+
+.totalsInfo {
+  margin: 0 3.8rem 2rem 0;
+}
+
+.totalsPrice {
+  font-size: 1rem;
+  color: #9f9f9f;
+}
+
+.subtotalsInfo {
+  margin-bottom: 3rem;
+}
+
+.subtotalsPrice {
+  color: var(--primary);
+  margin-left: 3.6rem;
+  font-size: 1.25rem;
+}
+
+.cartButton {
+  background-color: transparent;
+  font-size: 1.25rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 0.8rem 3.7rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cartButton:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
