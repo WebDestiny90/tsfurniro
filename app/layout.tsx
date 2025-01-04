@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./global.css"
+import { CartProvider } from '@/src/context/CartContext';
 
 export const metadata: Metadata = {
   title: "Furniro eCommerce",
@@ -13,7 +14,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <CartProvider>
+          {children}
+        </CartProvider>
+      </body>
     </html>
   );
 }
