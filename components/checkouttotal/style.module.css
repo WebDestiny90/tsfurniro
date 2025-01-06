@@ -1,0 +1,117 @@
+.rightSide {
+  width: 38rem;
+}
+
+.productInfoBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 100px;
+  border-bottom: 2px solid #9f9f9f;
+}
+
+.productTitle,
+.subTotal {
+  font: 1.5rem "Poppins-Medium", sans-serif;
+  color: #000;
+}
+
+.productNamesBox {
+  max-height: 150px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.productNamesBox::-webkit-scrollbar {
+  width: 5px;
+}
+
+.productNamesBox::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.productNamesBox::-webkit-scrollbar-thumb {
+  background: var(--primary, #b88e2f);
+  border-radius: 10px;
+}
+
+.productNames {
+  display: flex;
+  align-items: center;
+}
+
+.productNameItem {
+  margin-block: 0.875rem;
+  width: 100%;
+  max-width: 153px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #9f9f9f;
+}
+
+.font,
+.productPrice,
+.productSubtotalPrice {
+  font: 1rem "Poppins-Regular", sans-serif;
+}
+
+.productNameItem {
+  color: #9f9f9f;
+  margin-right: 11px;
+}
+
+.productQuantity {
+  font: 0.75rem "Poppins-Medium", sans-serif;
+}
+
+.productPriceBox p:not(:last-child) {
+  margin-bottom: 0.875rem;
+}
+
+.productPrice,
+.productSubtotalPrice {
+  font-family: "Poppins-Light", sans-serif;
+}
+
+.productTotal {
+  font: 1.5rem "Poppins-Bold", sans-serif;
+  color: var(--primary, #b88e2f);
+}
+
+.productPriceBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.bankLabel {
+  font: 1rem "Poppins-Medium", sans-serif;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  color: #9f9f9f;
+}
+
+.cashInput {
+  margin-right: 1rem;
+  accent-color: #000;
+}
+
+.cashDescription {
+  font: 1rem "Poppins-Light", sans-serif;
+  text-align: justify;
+  color: #9f9f9f;
+  margin-block: 1.5rem;
+}
+
+.checkOutButton {
+  font: 1.25rem "Poppins-Medium", sans-serif;
+  background-color: transparent;
+  padding: 1rem 6rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}

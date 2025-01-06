@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react";
 import styles from "./style.module.css"
+import Image from "next/image";
 
 const CategoryDescription = () => {
   const [activeTab, setActiveTab] = useState<"description" | "additional" | "reviews">("description");
@@ -41,9 +42,13 @@ const CategoryDescription = () => {
         <div className={styles.descriptionTextBox}>
           {renderContent()}
         </div>
+        <div className={styles.descriptionImages}>
+          <Image className={styles.descriptionImageItem} src="/assets/img/category/sofacategory/sofadescription/Makassar8937.webp" width={605} height={348} alt="description image" />
+          <Image className={styles.descriptionImageItem} src="/assets/img/category/sofacategory/sofadescription/Makassar8937_2.webp" width={605} height={348} alt="description image" />
+        </div>
       </div>
     </section>
   )
 }
 
-export default CategoryDescription
+export default CategoryDescription;

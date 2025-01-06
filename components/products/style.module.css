@@ -4,39 +4,21 @@
   margin: 3.5rem 0 2rem;
 }
 
-.colorGray {
-  color: #3a3a3a;
-}
-
 .mainGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
   gap: 2rem 0.6rem;
   margin-bottom: 2rem;
+  height: 51.563rem;
 }
 
 .gridItems {
   width: 17.8rem;
-  position: relative;
-}
-
-.gridItems:hover .gridDiscount {
-  opacity: 0.3;
-}
-
-.gridItems:hover .productHover {
-  opacity: 1;
 }
 
 .flex {
   display: flex;
-}
-
-.alignCenter {
   align-items: center;
-}
-
-.justifyCenter {
   justify-content: center;
 }
 
@@ -44,80 +26,49 @@
   color: #fff;
 }
 
-.gridDiscount {
-  position: absolute;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  right: 13px;
-  top: 13px;
-  font: 1rem/150% "Poppins-Medium",sans-serif;
-}
-
 .gridImage {
   width: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 10px 10px 0 0;
 }
 
 .gridInfo {
   background-color: #F4F5F7;
   padding: 1rem 1.2rem 1.5rem;
+  height: 6rem;
+  border-radius: 0 0 10px 10px;
 }
 
 .gridTitle {
   font: 1.5rem/120% "Poppins-SemiBold", sans-serif;
 }
 
-.gridText {
-  font: 1rem/150% "Poppins-Medium", sans-serif;
-  color: #898989;
-  padding: 0.5rem 0;
-}
-
-.gridPrices {
-  justify-content: space-between;
-}
-
-.gridPrice,
-.gridOldPrice {
-  font: 1.25rem/150% "Poppins-SemiBold", sans-serif;
-}
-
-.gridOldPrice {
-  font-size: 1rem;
-  font-family: "Poppins-Regular", sans-serif;
-  text-decoration: line-through;
-  color: #b0b0b0;
-}
-
-.productHover {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -40%);
-  background-color: rgba(50, 50, 50, 0.8);
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-}
-
 .font {
   font: 1rem/150% "Poppins-SemiBold", sans-serif;
 }
 
-.addBasket {
-  color: var(--primary, #b88e2f);
-  background-color: #fff;
-  padding: 0.75rem 3.75rem;
-  margin-bottom: 1.5rem;
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 3rem;
+}
+
+.pagination button {
+  font: 1.25rem "Poppins-Regular", sans-serif;
+  border: none;
+  color: #000;
+  background-color: #f9f1e7;
+  border-radius: 10px;
+  width: 3rem;
+  height: 3rem;
   cursor: pointer;
 }
 
-.hoverSubLinks {
-  gap: 0 6rem;
+.pagination button:is(:hover, .activePage) {
+  background-color: var(--primary, #b88e2f);
+  color: #fff;
 }
 
 .productShow {
@@ -128,6 +79,7 @@
   width: clamp(150px, 40%, 250px);
   height: 48px;
   border: 2px solid var(--primary, #b88e2f);
+  margin-top: 2rem;
 }
 
 @media (max-width: 767px) {

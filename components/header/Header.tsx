@@ -34,7 +34,7 @@ const Header = () => {
                 <li className={styles.headerListItems}><Link className={styles.headerLink} href="/" >Home</Link></li>
                 <li className={styles.headerListItems}><Link className={styles.headerLink} href="/shop" >Shop</Link></li>
                 <li className={styles.headerListItems}><Link className={styles.headerLink} href="/" >About</Link></li>
-                <li className={styles.headerListItems}><Link className={styles.headerLink} href="/" >Contact</Link></li>
+                <li className={styles.headerListItems}><Link className={styles.headerLink} href="/contact" >Contact</Link></li>
               </ul>
             </nav>
           </div>
@@ -88,7 +88,7 @@ const Header = () => {
               </div>
               <div className={styles.cartLinks}>
                 <Link className={`${styles.goCArtPageLink} ${styles.colorBlack} ${styles.linkFonts} ${styles.border}`} onClick={() => setBurgerMenuOpen(false)} href="/cart" >Cart</Link>
-                <Link className={`${styles.checkoutLink} ${styles.colorBlack} ${styles.linkFonts} ${styles.border}`} href="" >Checkout</Link>
+                <Link className={`${styles.checkoutLink} ${styles.colorBlack} ${styles.linkFonts} ${styles.border}`} href="/checkout" >Checkout</Link>
                 <Link className={`${styles.comparisonLink} ${styles.colorBlack} ${styles.linkFonts} ${styles.border}`} href="" >Comparison</Link>
               </div>
             </div>

@@ -28,6 +28,8 @@
 font: 1rem "Poppins-Regular", sans-serif;
 text-align: justify;
 color: #9f9f9f;
+margin-top: 2rem;
+height: 2rem;
 }
 
 .descriptionTitleBox h2 {
@@ -37,4 +39,10 @@ color: #9f9f9f;
 .descriptionTitleBox h2.active {
   font-weight: bold;
   color: #000;
+}
+
+.descriptionImages {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
 }

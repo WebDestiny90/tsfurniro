@@ -1,0 +1,98 @@
+.checkOutItems {
+  background: url(../../../public/assets/img/shopimg.png) no-repeat center bottom/ cover;
+  padding: 5rem 0;
+}
+
+.logoImage {
+  display: block;
+  margin: auto;
+}
+
+.checkOutTitle {
+  color: #000;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.checkOutTextsBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeText {
+  color: #000;
+  font-size: 1rem;
+  font-family: "Poppins-Medium", sans-serif;
+}
+
+.arrowImage {
+  margin-inline: 6px;
+}
+
+.checkOutText {
+  color: #000;
+  font-size: 1rem;
+  font-family: "Poppins-Light", sans-serif
+}
+
+.leftSide {
+  margin-top: 5rem;
+  width: 38rem;
+}
+
+.billingDetailsTitle {
+  font: 2.25rem "Poppins-SemiBold", sans-serif;
+  color: #000;
+}
+
+.billingForm {
+  display: flex;
+  gap: 12rem;
+}
+
+.nameLabelBox,
+.flex {
+  display: flex;
+}
+
+.flex {
+  flex-direction: column;
+  font: 1rem "Poppins-Medium", sans-serif;
+  color: #000;
+  margin-top: 2rem;
+}
+
+.nameInput {
+  margin-right: 1.9rem;
+}
+.name,
+.companyNameInput,
+.countrySelect,
+.addressInput,
+.cityInput,
+.provinceSelect,
+.zipInput,
+.phoneInput,
+.emailInput {
+  font: 1rem "Poppins-Regular", sans-serif;
+  color: #9f9f9f;
+  border: 1px solid #9f9f9f;
+  border-radius: 10px;
+  width: 13rem;
+  height: 4.6rem;
+  margin-top: 1.3rem;
+  padding-inline: 5px;
+}
+
+.companyNameInput,
+.countrySelect,
+.addressInput,
+.cityInput,
+.provinceSelect,
+.zipInput,
+.phoneInput,
+.emailInput  {
+  width: 28rem;
+}

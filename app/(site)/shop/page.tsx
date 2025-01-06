@@ -1,8 +1,8 @@
 import Link from "next/link"
 import styles from "./style.module.css"
 import Image from "next/image"
-import { CategoryLinks } from "@/src/Links"
-
+import Products from "@/components/products/Products";
+import Features from "@/components/features/Features";
 
 const Shop = () => {
   return (
@@ -18,23 +18,11 @@ const Shop = () => {
         </div>
       </div>
       <div className="container">
-        <div className={styles.mainGrid}>
-          {
-            CategoryLinks.map(({ id, to, imageSrc, alt, title }) => {
-              return (
-                <div key={id} className={styles.gridItems}>
-                  <Link href={to}><Image className={`${styles.gridImage} ${styles.shadow}`} src={imageSrc} alt={alt} width={285} height={301} /></Link>
-                  <div className={`${styles.gridInfo} ${styles.shadow}`}>
-                    <h3 className={`${styles.gridTitle} ${styles.colorGray}`}>{title}</h3>
-                  </div>
-                </div>
-              )
-            })
-          }
-        </div>
+        <Products showMore={false} our={false} />
       </div>
+      <Features />
     </main>
-  )
-}
+  );
+};
 
-export default Shop
+export default Shop;
