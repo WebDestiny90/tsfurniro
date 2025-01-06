@@ -4,6 +4,7 @@ import styles from "./style.module.css"
 import Image from "next/image"
 import { useCart } from '@/src/context/CartContext';
 import { features } from "@/src/Links";
+import Features from "@/components/features/Features";
 
 
 const Cart = () => {
@@ -66,28 +67,11 @@ const Cart = () => {
                 <p className={styles.subtotalsInfo}>Total</p>
                 <p className={styles.subtotalsPrice}>${total.toFixed(2)}</p>
               </div>
-              <button className={styles.cartButton}>Check out</button>
-            </div>
-          </div>
-
-        </div>
-        <div className={styles.featuresbox}>
-          <div className="container">
-            <div className={styles.featuresContainer}>
-              {
-                features.map(({ id, imgSrc, alt, title, text }) => (
-                  <div key={id} className={styles.features}>
-                    <Image className={styles.featuresImage} src={imgSrc} alt={alt} width={60} height={60} />
-                    <div className={styles.featuresTexts}>
-                      <p className={styles.featuresTitle}>{title}</p>
-                      <p className={styles.featuresDescription}>{text}</p>
-                    </div>
-                  </div>
-                ))
-              }
+              <Link href="/checkout" className={styles.cartButton}>Check out</Link>
             </div>
           </div>
         </div>
+        <Features />
       </div>
     </section>
   )
