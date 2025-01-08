@@ -32,6 +32,11 @@
   gap: 0 2rem;
 }
 
+.test {
+  display: flex;
+  gap: 0 2rem;
+}
+
 .singleImage {
   display: block;
   border-radius: 10px;
@@ -116,4 +121,274 @@
   border-radius: 15px;
   cursor: pointer;
   margin-top: 2rem;
+}
+
+@media (max-width: 500px) {
+  .singleImage {
+    margin: 0 auto;
+    width: 20%;
+    height: 20%;
+  }
+}
+
+@media (max-width: 501px) {
+  .singleItems {
+    padding-block: 1rem;
+  }
+
+  .singleTextsBox {
+    margin-left: 0.5rem;
+  }
+
+  .arrowImage {
+    margin-inline: 0.5rem;
+  }
+
+  .singleText {
+    font-size: 0.6rem;
+    padding-left: 0.7rem;
+  }
+
+  .singleImageBox {
+    margin-top: 1.5rem;
+    flex-direction: column;
+  }
+
+  .test {
+    flex-direction: column-reverse;
+  }
+
+  .singleImage {
+    margin-top: 1rem;
+  }
+
+  .singleImage:not(:last-child) {
+    margin-bottom: 0.8rem;
+    margin-right: 0.5rem;
+  }
+
+  .singleMainImageItem {
+    width: 100%;
+    height: 100%;
+  }
+
+  .singleImageBoxItems {
+    display: flex;
+  }
+
+  .singleDescription {
+    margin-left: 0;
+  }
+
+  .descriptionTitle {
+    font-size: clamp(1.3125rem, -1.0208rem + 11.6667vw, 2.625rem);
+  }
+
+  .descriptionPrice {
+    font-size: clamp(1rem, 0.1111rem + 4.4444vw, 1.5rem);
+  }
+
+  .descriptionText {
+    font-size: clamp(0.713rem, 0.5352rem + 0.8889vw, 0.813rem);
+    width: 18rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
+
+  .descriptionColorBox {
+    display: flex;
+    align-items: center;
+  }
+
+  .descriptionColorText {
+    margin-right: 0.5rem;
+  }
+
+  .colorButton {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+  }
+
+  .cartButtonItem {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+    margin-top: 0rem;
+  }
+}
+
+@media (min-width: 502px) and (max-width: 767px) {
+  .singleItems {
+    padding-block: 1.5rem;
+  }
+
+  .singleTextsBox {
+    margin-left: 1rem;
+  }
+
+  .arrowImage {
+    margin-inline: 0.6rem;
+  }
+
+  .test {
+    margin: 0 auto;
+    /* align-items: center; */
+  }
+
+  .singleText {
+    font-size: 0.8rem;
+    padding-left: 0.8rem;
+  }
+
+  .singleImageBox {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+
+  .singleImage:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .singleMainImageItem {
+    width: 100%;
+    /* object-fit: cover; */
+  }
+
+  .singleDescription {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .descriptionTitle {
+    font-size: 1.5rem;
+  }
+
+  .descriptionPrice {
+    font-size: clamp(1rem, 0.1111rem + 4.4444vw, 1.5rem);
+  }
+
+  .descriptionText {
+    font-size: clamp(0.713rem, 0.5352rem + 0.8889vw, 0.813rem);
+    width: 92vw;
+    text-align: center;
+  }
+
+  .descriptionColorBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .descriptionColorText {
+    margin-right: 1rem;
+  }
+
+  .colorButton {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+  }
+
+  .cartButtonItem {
+    font-size: 1.1rem;
+    padding: 0.9rem 2rem;
+    margin-top: 0rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .singleItems {
+    padding-block: 2rem;
+  }
+
+  .singleTextsBox {
+    margin-left: 2rem;
+  }
+
+  .arrowImage {
+    margin-inline: 0.7rem;
+  }
+
+  .test {
+    margin: 0 auto;
+  }
+
+  .singleImageBox {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+
+  .singleMainImageItem {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .singleDescription {
+    margin-left: 3rem;
+    margin-top: 2rem;
+  }
+
+  .descriptionTitle {
+    font-size: 2rem;
+  }
+
+  .descriptionPrice {
+    font-size: clamp(1rem, 0.1111rem + 4.4444vw, 1.5rem);
+  }
+
+  .descriptionText {
+    font-size: clamp(0.713rem, 0.5352rem + 0.8889vw, 0.813rem);
+    width: 92vw;
+    text-align: left;
+  }
+
+  .descriptionColorBox {
+    display: flex;
+    align-items: center;
+  }
+
+  .descriptionColorText {
+    margin-right: 2rem;
+  }
+
+  .cartButtonItem {
+    margin-top: 1rem;
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .singleImageBox {
+    margin-top: 3rem;
+  }
+
+  .singleDescription {
+    width: 50%;
+    margin-left: 0;
+    margin-top: 0rem;
+  }
+
+  .descriptionTitle {
+    font-size: 1.5rem;
+  }
+
+  .descriptionPrice {
+    font-size: clamp(1rem, 0.1111rem + 4.4444vw, 1.5rem);
+  }
+
+  .descriptionText {
+    font-size: clamp(0.713rem, 0.5352rem + 0.8889vw, 0.813rem);
+    width: 100%;
+    text-align: justify;
+  }
+
+  .descriptionColorText {
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+
 }

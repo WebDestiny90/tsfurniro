@@ -27,7 +27,7 @@ export const CategoryLinks = [
 export const features = [
   { id: 1, imgSrc: "/assets/img/icons/trophy.svg", alt: "Trophy icon", title: "High Quality", text: "crafted from top materials" },
   { id: 2, imgSrc: "/assets/img/icons/guarantee.svg", alt: "warranty icon", title: "Warranty Protection", text: "Over 2 years" },
-  { id: 3, imgSrc: "/assets/img/icons/guarantee.svg", alt: "shipping icon", title: "Free Shipping", text: "Order over 150 $" },
+  { id: 3, imgSrc: "/assets/img/icons/shipping.svg", alt: "shipping icon", title: "Free Shipping", text: "Order over 150 $" },
   { id: 4, imgSrc: "/assets/img/icons/customersupport.svg", alt: "customer support icon", title: "24 / 7 Support", text: "Dedicated support" }
 ]
 

@@ -1,5 +1,6 @@
 .header {
   padding-block: 1.5rem;
+  position: relative;
 }
 
 .headerItems,
@@ -32,7 +33,6 @@
   position: relative;
   z-index: 11;
   cursor: pointer;
-  
 }
 
 .cartMenu {

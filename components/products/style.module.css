@@ -5,15 +5,14 @@
 }
 
 .mainGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
-  gap: 2rem 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr)); */
+  gap: 2rem;
   margin-bottom: 2rem;
-  height: 51.563rem;
-}
-
-.gridItems {
-  width: 17.8rem;
+  /* max-height: 51.563rem; */
 }
 
 .flex {
@@ -89,9 +88,25 @@
   }
 
   .mainGrid {
-    place-items: center;
-    gap: 1rem 0rem;
+    justify-content: center;
+    gap: 0.3rem 0.2rem;
     margin-bottom: 1.2rem;
+  }
+
+   .gridImage {
+    width: 35vw;
+    height: 50%;
+  }
+
+  .gridInfo {
+    width: 35vw;
+    padding: 0.5rem 0.5rem 1rem;
+    height: 3rem;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .gridTitle {
+    font-size: clamp(0.6875rem, 0.1058rem + 2.9083vw, 1.5rem);
   }
   
 }

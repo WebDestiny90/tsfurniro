@@ -25,29 +25,31 @@ const SofaDetails = ({ sofa }: { sofa: Sofa }) => {
     <>
       <div className="container">
         <div className={styles.singleImageBox}>
-          <div className={styles.singleImageBoxItems}>
-            {sofa.colors[currentColor].previews.map((preview, index) => (
+          <div className={styles.test}>
+            <div className={styles.singleImageBoxItems}>
+              {sofa.colors[currentColor].previews.map((preview, index) => (
+                <Image
+                  loading="lazy"
+                  key={preview}
+                  className={styles.singleImage}
+                  src={preview}
+                  width={76}
+                  height={80}
+                  alt={sofa.alt}
+                  onClick={() => handleImageClick(sofa.colors[currentColor].mains[index])}
+                />
+              ))}
+            </div>
+            <div className={styles.singleMainImage}>
               <Image
-                loading="lazy"
-                key={preview}
-                className={styles.singleImage}
-                src={preview}
-                width={76}
-                height={80}
+                priority
+                className={styles.singleMainImageItem}
+                src={mainImage}
+                width={423}
+                height={500}
                 alt={sofa.alt}
-                onClick={() => handleImageClick(sofa.colors[currentColor].mains[index])}
               />
-            ))}
-          </div>
-          <div className={styles.singleMainImage}>
-            <Image
-              priority
-              className={styles.singleMainImageItem}
-              src={mainImage}
-              width={423}
-              height={500}
-              alt={sofa.alt}
-            />
+            </div>
           </div>
           <div className={styles.singleDescription}>
             <h1 className={styles.descriptionTitle}>{sofa.name}</h1>

@@ -25,7 +25,7 @@ const Products = ({ showMore = true, our = true }) => {
           <div className={styles.mainGrid}>
             {currentItems.map(({ id, to, imageSrc, alt, title }) => (
               <div key={id} className={styles.gridItems}>
-                <Link href={to}>
+                <Link className={styles.productLinkItem} href={to}>
                   <Image className={`${styles.gridImage} ${styles.shadow}`} src={imageSrc} alt={alt} width={285} height={301} />
                 </Link>
                 <div className={`${styles.gridInfo} ${styles.shadow}`}>
