@@ -38,7 +38,7 @@ export interface Sofa {
 
 export interface PageProps {
   params: {
-    id: string;
+    id: number;
   };
 }
 
