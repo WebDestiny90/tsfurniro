@@ -7,7 +7,7 @@ import Features from "@/components/features/Features";
 
 
 const Cart = () => {
-  const { cartItems, removeFromCart, updateQuantity } = useCart();
+  const { cartItems, removeFromCart } = useCart();
 
   const total = cartItems.reduce((sum, item) =>
     sum + (Number(item.sofa.price.replace(/[^0-9.-]+/g, '')) * item.quantity), 0
