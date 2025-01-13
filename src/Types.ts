@@ -36,6 +36,12 @@ export interface Sofa {
   descriptionText: string;
 }
 
+export interface PageProps {
+  params: {
+    id: string;
+  };
+}
+
 export interface CartItem {
   sofa: Sofa;
   quantity: number;
