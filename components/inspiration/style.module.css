@@ -4,8 +4,7 @@
   padding: 6rem 0;
 }
 
-.articleItems,
-.swiperContainer {
+.articleItems {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,14 +12,17 @@
 
 .articleTitle {
   color: #3a3a3a;
-  font: 2.5rem/120% "Poppins-Bold", sans-serif;
-  max-width: 26rem;
+  /* font: 2.5rem/120% "Poppins-Bold", sans-serif; */
+  font-size: clamp(1rem, 0.4545rem + 2.7273vw, 2.5rem);
+  line-height: 120%;
+  font-family: "Poppins-Bold", sans-serif;;
+  width: 26rem;
 }
 
 .articleText {
   color: #616161;
   font: 1rem/150% "Poppins-Medium", sans-serif;
-  max-width: 23rem;
+  width: 23rem;
   margin-bottom: 1.5rem;
 }
 
@@ -32,18 +34,22 @@
 }
 
 .swiperContainer {
-  width: 50%;
-  height: 486px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 60%;
 }
 
 .firstSwiperContainer,
 .secondSwiperContainer {
-  width: 70%;
-  height: 582px;
+  width: 48%; 
 }
 
-.secondSwiperItem {
-  padding-left: 45px;
+.sliderImg,
+.secondSliderImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .firstSlider {
@@ -89,70 +95,58 @@
 
 @media (max-width: 767px) {
   .article {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding: 1rem 0;
   }
-  
-  .articleItems,
-  .swiperContainer {
+
+  .articleItems {
     flex-direction: column;
   }
 
   .articleTitle {
-    font-size: clamp(1.8rem, 1.2989rem + 2.5056vw, 2.5rem);
+    font-size: clamp(1rem, -0.3268rem + 5.8968vw, 2.5rem);
+    text-align: center;
+    width: 100%;
   }
 
   .articleText {
-    font-size: clamp(0.8rem, 0.6568rem + 0.7159vw, 1rem);
+    font-size: clamp(0.7rem, 0.4346rem + 1.1794vw, 1rem);
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
   }
 
   .articleLink {
-    font-size: 0.775rem;
-    padding: 0.5rem 1.7rem;
+    font-size: clamp(.8rem, .6231rem + .7862vw, 1rem);
+    padding: 0.4rem 1rem;
+    width: fit-content;
+    display: block;
+    margin: 0 auto 1rem;
+    text-align: center;
   }
 
   .swiperContainer {
-    width: 100%;
-    height: 100%;
-  }
-
-  .firstSwiperContainer {
-    margin-top: 2rem;
-  }
-  
-  .firstSwiperContainer,
-  .secondSwiperContainer {
-    width: 100%;
-  }
-  
-  .secondSwiperItem {
-    padding-left: 0;
-    margin-top: 1.5rem;
-  }
-
-  .sliderImg,
-  .secondSliderImg {
+    gap: 0.7rem;
+    flex-wrap: nowrap;
     width: 100%;
   }
 
   .swiperItems {
-    width: 10rem;
-    padding: 1rem;
+    width: clamp(6.9375rem, 0.2483rem + 29.7297vw, 14.5rem);
+    padding: 12px;
   }
   
   .swiperText {
-    font-size: 0.7rem;
-    margin-bottom: 2px;
+    font-size: clamp(0.6rem, 0.2462rem + 1.5725vw, 1rem);
+    margin-bottom: 5px;
   }
   
   .swiperTitle {
-    font-size: 1rem;
+    font-size: clamp(0.8rem, -0.0403rem + 3.7346vw, 1.75rem);
   }
   
   .swiperLinkItem {
-    padding: 5px;
-    left: 11.5rem;
-    font-size: 1.2rem;
+   display: none;
   }
 
 }
@@ -160,157 +154,63 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .article {
     margin-top: 1.5rem;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
   }
-  
+
   .articleItems {
     flex-direction: column;
   }
 
   .articleTitle {
-    font-size: clamp(1.8rem, 1.2989rem + 2.5056vw, 2.5rem);
+    font-size: clamp(1rem, 2rem, 2.5rem);
+    text-align: center;
+    width: 100%;
   }
 
   .articleText {
-    font-size: clamp(0.8rem, 0.6568rem + 0.7159vw, 1rem);
+    font-size: clamp(0.7rem, 0.8rem, 1rem);
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
   }
 
   .articleLink {
-    font-size: 0.875rem;
-    padding: 0.8rem 2rem;
+    font-size: clamp(0.8rem, 0.6231rem, 1rem);
+    padding: 0.4rem 1rem;
+    width: fit-content;
+    display: block;
+    margin: 0 auto 1rem;
+    text-align: center;
   }
 
   .swiperContainer {
-    width: 100%;
-    height: 100%;
     gap: 1rem;
-  }
-
-  .firstSwiperContainer {
-    margin-top: 2rem;
-  }
-  
-  .firstSwiperContainer,
-  .secondSwiperContainer {
-    width: 50%;
-  }
-  
-  .secondSwiperItem {
-    padding-left: 0;
-    margin-top: 1.5rem;
+    flex-wrap: nowrap;
   }
 
   .sliderImg,
   .secondSliderImg {
     width: 100%;
+    /* height: 100vh; */
+    object-fit: contain;
   }
 
   .swiperItems {
-    width: 10rem;
-    padding: 1rem;
-  }
-  
-  .swiperText {
-    font-size: 0.7rem;
-    margin-bottom: 2px;
-  }
-  
-  .swiperTitle {
-    font-size: 1rem;
+    display: none;
   }
   
   .swiperLinkItem {
-    padding: 5px;
-    left: 11.5rem;
-    font-size: 1.2rem;
+   display: none;
   }
+  
 
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .article {
-    margin-top: 1.5rem;
-    padding: 1.5rem 0;
-  }
   
-  .articleItems {
-    flex-direction: column;
-  }
-
-  .articleTitle {
-    font-size: clamp(1.8rem, 1.2989rem + 2.5056vw, 2.5rem);
-  }
-
-  .articleText {
-    font-size: clamp(0.8rem, 0.6568rem + 0.7159vw, 1rem);
-  }
-
-  .articleLink {
-    font-size: 0.875rem;
-    padding: 0.8rem 2rem;
-  }
-
-  .swiperContainer {
-    width: 100%;
-    height: 100%;
-    gap: 1rem;
-  }
-
-  .firstSwiperContainer {
-    margin-top: 2rem;
-  }
-  
-  .firstSwiperContainer,
-  .secondSwiperContainer {
-    width: 50%;
-  }
-  
-  .secondSwiperItem {
-    padding-left: 0;
-    margin-top: 1.5rem;
-  }
-
-  .sliderImg,
-  .secondSliderImg {
-    width: 100%;
-  }
-
-  .swiperItems {
-    width: 10rem;
-    padding: 1rem;
-  }
-  
-  .swiperText {
-    font-size: 0.7rem;
-    margin-bottom: 2px;
-  }
-  
-  .swiperTitle {
-    font-size: 1rem;
-  }
-  
-  .swiperLinkItem {
-    padding: 5px;
-    left: 11.5rem;
-    font-size: 1.2rem;
-  }
-
 }
 
 @media (min-width: 1200px)and (max-width: 1350px) {
-  .articleItems,
-  .swiperContainer {
-    align-items: center;
-    justify-content: stretch;
-  }
-  
-  .firstSwiperContainer,
-  .secondSwiperContainer {
-    width: 71%;
-  }
-  
-  .secondSwiperItem {
-    padding-left: 0;
-  }
+ 
 
 }

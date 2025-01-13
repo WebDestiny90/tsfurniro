@@ -27,15 +27,13 @@ const Inspiration = () => {
           <div className={styles.swiperContainer}>
             <div className={styles.firstSwiperContainer}>
               <Swiper
-                spaceBetween={30}
-                centeredSlides={true}
                 effect={'fade'}
                 loop={true}
                 speed={1500}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}
+                // autoplay={{
+                //   delay: 3000,
+                //   disableOnInteraction: false,
+                // }}
                 modules={[Autoplay, EffectFade]}
                 className={styles.firstSlider}
               >
@@ -61,14 +59,12 @@ const Inspiration = () => {
             </div>
             <div className={styles.secondSwiperContainer}>
               <Swiper
-                spaceBetween={30}
-                centeredSlides={true}
                 loop={true}
                 speed={1500}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}
+                // autoplay={{
+                //   delay: 3000,
+                //   disableOnInteraction: false,
+                // }}
                 modules={[Autoplay]}
                 className={styles.secondSwiperItem}
               >
