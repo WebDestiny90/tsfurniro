@@ -7,12 +7,17 @@ import { Sofa } from "@/src/Types";
 
 const url: string = "https://json-server-vercel-tsfurniro.vercel.app/sofas/"
 
-const SofaPage = async ({ params }: { params: { id: number } }) => {
-  const _id = +params.id;
-  const { data }: { data: Sofa } = await axios.get(url + _id)
+interface Params {
+  id: number;
+}
 
-  // const response = await fetch(`https://json-server-vercel-tsfurniro.vercel.app/sofas/${params.id}`);
-  // const sofa = await response.json();
+interface PageProps {
+  params: Params;
+}
+
+const SofaPage = async ({ params }: PageProps) => {
+  const { id } = params;
+  const { data }: { data: Sofa } = await axios.get(url + id);
 
   return (
     <main className={styles.singleMainPage}>
