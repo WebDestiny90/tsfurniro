@@ -3,12 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 import SofaDetails from '@/components/sofaDetails/SofaDetails';
 import axios from 'axios';
+import { Sofa } from "@/src/Types";
 
 const url: string = "https://json-server-vercel-tsfurniro.vercel.app/sofas/"
 
 const SofaPage = async ({ params }: { params: { id: string } }) => {
   const _id = +params.id;
-  const { data } = await axios.get(url + _id)
+  const { data }: { data: Sofa } = await axios.get(url + _id)
 
   // const response = await fetch(`https://json-server-vercel-tsfurniro.vercel.app/sofas/${params.id}`);
   // const sofa = await response.json();
