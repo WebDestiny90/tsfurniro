@@ -3,7 +3,6 @@ import Link from "next/link"
 import styles from "./style.module.css"
 import Image from "next/image"
 import { useCart } from '@/src/context/CartContext';
-import { features } from "@/src/Links";
 import Features from "@/components/features/Features";
 
 

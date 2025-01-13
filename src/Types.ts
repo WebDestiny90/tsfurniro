@@ -31,6 +31,7 @@ export interface Sofa {
   price: string;
   alt: string;
   mainImg: string;
+  nameDesc: string;
   colors: ColorPaths;
   descriptionText: string;
 }

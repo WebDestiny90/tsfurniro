@@ -3,6 +3,7 @@ import axios from "axios";
 import Link from "next/link";
 import styles from "./style.module.css";
 import Image from "next/image";
+import { Sofa } from "@/src/Types";
 
 const url: string = "https://json-server-vercel-tsfurniro.vercel.app/sofas/"
 const page = async () => {
@@ -13,7 +14,7 @@ const page = async () => {
       <div className="container">
         <div className={styles.mainGrid}>
           {
-            data.map(({ id, name, price, mainImg, alt, nameDesc }: any) => {
+            data.map(({ id, name, price, mainImg, alt, nameDesc }: Sofa) => {
               return (
                 <div key={id} className={styles.gridItems}>
                   <Link href={`/sofaCategory/${id}`}><Image className={`${styles.gridImage} ${styles.shadow}`} src={mainImg} alt={alt} width={285} height={301} /></Link>

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "@/app/(site)/sofaCategory/[id]/style.module.css"
 import Image from "next/image";
-import { ColorPaths, ColorVariant, Sofa } from "@/src/Types";
+import { ColorVariant, Sofa } from "@/src/Types";
 import { useCart } from '@/src/context/CartContext';
 import Categorydescription from "../categoryDescription/Categorydescription";
 

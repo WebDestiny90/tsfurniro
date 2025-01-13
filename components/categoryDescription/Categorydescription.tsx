@@ -11,13 +11,13 @@ const CategoryDescription = () => {
       case "description":
         return (
           <p className={styles.descriptionFirstText}>
-            Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.
+            Embodying the raw, wayward spirit of rock n roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.
           </p>
         );
       case "additional":
         return (
           <p className={styles.descriptionSecondText}>
-            When you buy a Wade Logan® Makassar 89.37'' Chenille Square Armrest Couch Sofa online from Wayfair, we make it as easy as possible for you to find out when your product will be delivered.
+            When you buy a Wade Logan® Makassar 89.37 Chenille Square Armrest Couch Sofa online from Wayfair, we make it as easy as possible for you to find out when your product will be delivered.
           </p>
         );
       case "reviews":
