@@ -36,11 +36,11 @@ export interface Sofa {
   descriptionText: string;
 }
 
-export interface PageProps {
-  params: {
-    id: number;
-  };
-}
+// export interface PageProps {
+//   params: {
+//     id: number;
+//   };
+// }
 
 export interface CartItem {
   sofa: Sofa;
