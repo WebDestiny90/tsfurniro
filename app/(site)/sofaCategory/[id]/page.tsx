@@ -3,21 +3,15 @@ import Link from "next/link";
 import Image from "next/image";
 import SofaDetails from '@/components/sofaDetails/SofaDetails';
 import axios from 'axios';
-import { Sofa } from "@/src/Types";
 
 const url: string = "https://json-server-vercel-tsfurniro.vercel.app/sofas/"
 
-interface Params {
-  id: number;
-}
+const SofaPage = async ({ params }: any) => {
+  const _id = +params.id;
+  const { data } = await axios.get(url + _id);
 
-interface PageProps {
-  params: Params;
-}
+  console.log(params);
 
-const SofaPage = async ({ params }: PageProps) => {
-  const { id } = params;
-  const { data }: { data: Sofa } = await axios.get(url + id);
 
   return (
     <main className={styles.singleMainPage}>
