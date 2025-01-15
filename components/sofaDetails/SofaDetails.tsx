@@ -9,7 +9,7 @@ import Categorydescription from "../categoryDescription/Categorydescription";
 
 const SofaDetails = ({ sofa }: { sofa: Sofa }) => {
   const { addToCart } = useCart();
-  const [currentColor, setCurrentColor] = useState<ColorVariant>("beige");
+  const [currentColor, setCurrentColor] = useState("beige");
   const [mainImage, setMainImage] = useState<string>(sofa.mainImg);
 
   const handleColorChange = (color: ColorVariant) => {
@@ -70,7 +70,7 @@ const SofaDetails = ({ sofa }: { sofa: Sofa }) => {
                 ></button>
               ))}
               <div className={styles.cartButton}>
-                <button className={styles.cartButtonItem} onClick={() => addToCart(sofa, currentColor)}>Add to Cart</button>
+                <button className={styles.cartButtonItem} onClick={() => addToCart(sofa, currentColor as ColorVariant)}>Add to Cart</button>
               </div>
             </div>
           </div>

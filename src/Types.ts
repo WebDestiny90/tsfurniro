@@ -14,7 +14,7 @@ export interface categoryItems {
   text: string;
 }
 
-export type ColorVariant = "beige" | "pink" | "gray";
+export type ColorVariant = string;
 
 export interface ColorPaths {
   [key: string]: {
@@ -35,12 +35,6 @@ export interface Sofa {
   colors: ColorPaths;
   descriptionText: string;
 }
-
-// export interface PageProps {
-//   params: {
-//     id: number;
-//   };
-// }
 
 export interface CartItem {
   sofa: Sofa;
