@@ -10,9 +10,15 @@ const CategoryDescription = () => {
     switch (activeTab) {
       case "description":
         return (
-          <p className={styles.descriptionFirstText}>
-            Embodying the raw, wayward spirit of rock n roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.
-          </p>
+          <div>
+            <p className={styles.descriptionFirstText}>
+              Embodying the raw, wayward spirit of rock n roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.
+            </p>
+            <div className={styles.descriptionImages}>
+              <Image className={styles.descriptionImageItem} src="/assets/img/category/sofacategory/sofadescription/Makassar8937.webp" width={605} height={348} alt="description image" />
+              <Image className={styles.descriptionImageItem} src="/assets/img/category/sofacategory/sofadescription/Makassar8937_2.webp" width={605} height={348} alt="description image" />
+            </div>
+          </div>
         );
       case "additional":
         return (
@@ -42,10 +48,7 @@ const CategoryDescription = () => {
         <div className={styles.descriptionTextBox}>
           {renderContent()}
         </div>
-        <div className={styles.descriptionImages}>
-          <Image className={styles.descriptionImageItem} src="/assets/img/category/sofacategory/sofadescription/Makassar8937.webp" width={605} height={348} alt="description image" />
-          <Image className={styles.descriptionImageItem} src="/assets/img/category/sofacategory/sofadescription/Makassar8937_2.webp" width={605} height={348} alt="description image" />
-        </div>
+
       </div>
     </section>
   )

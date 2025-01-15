@@ -3,15 +3,10 @@ import Link from "next/link";
 import Image from "next/image";
 import SofaDetails from '@/components/sofaDetails/SofaDetails';
 
-// const url: string = "https://json-server-vercel-tsfurniro.vercel.app/sofas/"
-
 const SofaPage = async ({ params }: { params: Promise<{ id: number }> }) => {
   const resolvedParams = await params;
-
   const response = await fetch(`https://json-server-vercel-tsfurniro.vercel.app/sofas/${resolvedParams.id}`);
   const sofa = await response.json();
-
-
 
   return (
     <main className={styles.singleMainPage}>
@@ -31,4 +26,4 @@ const SofaPage = async ({ params }: { params: Promise<{ id: number }> }) => {
   );
 }
 
-export default SofaPage; 
+export default SofaPage;

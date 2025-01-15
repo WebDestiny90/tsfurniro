@@ -22,24 +22,21 @@
 
 .gridInfo {
   background-color: #F4F5F7;
-  text-align: center;
   padding: 1.5rem 0.8rem;
+  height: 10.5rem;
 }
 
 .gridTitle {
   font: 1rem/120% "Poppins-SemiBold", sans-serif;
-  text-align: left;
 }
 
 .gridDesc {
   font: 1rem/150% "Poppins-Medium", sans-serif;
   color: #898989;
   margin-block: 0.5rem;
-  text-align: left;
 }
 
 .gridPrice {
   font: 1.25rem/150% "Poppins-SemiBold", sans-serif;
   color: #3a3a3a;
-  text-align: left;
 }

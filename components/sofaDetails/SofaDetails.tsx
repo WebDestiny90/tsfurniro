@@ -9,7 +9,7 @@ import Categorydescription from "../categoryDescription/Categorydescription";
 
 const SofaDetails = ({ sofa }: { sofa: Sofa }) => {
   const { addToCart } = useCart();
-  const [currentColor, setCurrentColor] = useState("beige");
+  const [currentColor, setCurrentColor] = useState("firstColor");
   const [mainImage, setMainImage] = useState<string>(sofa.mainImg);
 
   const handleColorChange = (color: ColorVariant) => {
@@ -25,7 +25,7 @@ const SofaDetails = ({ sofa }: { sofa: Sofa }) => {
     <>
       <div className="container">
         <div className={styles.singleImageBox}>
-          <div className={styles.test}>
+          <div className={styles.singleImageBoxItemsContainer}>
             <div className={styles.singleImageBoxItems}>
               {sofa.colors[currentColor].previews.map((preview, index) => (
                 <Image
