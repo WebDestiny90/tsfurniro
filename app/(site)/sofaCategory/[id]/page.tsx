@@ -2,7 +2,6 @@ import styles from "./style.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import SofaDetails from '@/components/sofaDetails/SofaDetails';
-import axios from 'axios';
 
 // const url: string = "https://json-server-vercel-tsfurniro.vercel.app/sofas/"
 
