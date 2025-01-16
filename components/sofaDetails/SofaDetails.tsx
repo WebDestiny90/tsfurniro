@@ -1,11 +1,10 @@
 "use client"
-
 import { useState } from "react";
 import styles from "@/app/(site)/sofaCategory/[id]/style.module.css"
 import Image from "next/image";
 import { ColorVariant, Sofa } from "@/src/Types";
 import { useCart } from '@/src/context/CartContext';
-import Categorydescription from "../categoryDescription/Categorydescription";
+import CategoryDescription from "../categoryDescription/Categorydescription";
 
 const SofaDetails = ({ sofa }: { sofa: Sofa }) => {
   const { addToCart } = useCart();
@@ -76,7 +75,7 @@ const SofaDetails = ({ sofa }: { sofa: Sofa }) => {
           </div>
         </div>
       </div>
-      <Categorydescription />
+      <CategoryDescription sofa={sofa} />
     </>
   );
 };

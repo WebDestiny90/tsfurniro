@@ -34,6 +34,16 @@ export interface Sofa {
   nameDesc: string;
   colors: ColorPaths;
   descriptionText: string;
+  description: {
+    text: string;
+    images: string[];
+  };
+  additional: {
+    text: string;
+  };
+  reviews: {
+    text: string;
+  };
 }
 
 export interface CartItem {
