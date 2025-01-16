@@ -24,11 +24,17 @@
 .descriptionFirstText,
 .descriptionSecondText,
 .descriptionThirdText {
-font: 1rem "Poppins-Regular", sans-serif;
-text-align: justify;
-color: #9f9f9f;
-margin-top: 2rem;
-height: 2rem;
+  font: 1rem "Poppins-Regular", sans-serif;
+  text-align: justify;
+  color: #9f9f9f;
+  margin-top: 2rem;
+  height: 2rem;
+}
+
+.descriptionSecondText {
+  list-style: circle;
+  padding-bottom: 3rem;
+
 }
 
 .descriptionTitleBox h2 {
@@ -42,7 +48,7 @@ height: 2rem;
 
 .descriptionImages {
   display: flex;
-  justify-content: space-evenly;
+  gap: 1.5rem;
   margin-top: 2rem;
 }
 

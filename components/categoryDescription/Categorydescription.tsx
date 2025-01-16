@@ -31,9 +31,13 @@ const CategoryDescription: React.FC<SofaContentProps> = ({ sofa }) => {
         );
       case "additional":
         return (
-          <p className={styles.descriptionSecondText}>
-            {sofa.additional?.text || "No additional information available."}
-          </p>
+          <ul className={styles.additionlaList}>
+            <li className={styles.descriptionSecondText}>{sofa.additional?.text || "No additional information available."}</li>
+            <li className={styles.descriptionSecondText}>{sofa.additional?.text2 || "No additional information available."}</li>
+            <li className={styles.descriptionSecondText}>{sofa.additional?.text3 || "No additional information available."}</li>
+            <li className={styles.descriptionSecondText}>{sofa.additional?.text4 || "No additional information available."}</li>
+            <li className={styles.descriptionSecondText}>{sofa.additional?.text5 || "No additional information available."}</li>
+          </ul>
         );
       case "reviews":
         return (
