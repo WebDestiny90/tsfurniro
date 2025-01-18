@@ -63,3 +63,15 @@ export interface CartContextType {
   updateQuantity: (sofaId: string, quantity: number) => void;
   showNotification: boolean;
 }
+
+export interface BlogItem {
+  id: number;
+  imgSrc: string;
+  alt: string;
+  admin: string;
+  date: string;
+  tag: string;
+  title: string;
+  text: string;
+  loading?: "lazy" | "eager";
+}

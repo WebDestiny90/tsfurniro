@@ -1,3 +1,5 @@
+import { BlogItem } from "./Types";
+
 export const firstSlider = [
   { id: 1, imgSrc: "/assets/img/swiper1.png", text: "01 - Bed Room", title: "Inner Peace", to: "/" },
   { id: 2, imgSrc: "/assets/img/dining.png", text: "02 - Kitchen", title: "Comfortable", to: "/" },
@@ -61,3 +63,9 @@ export const contactFields = [
   { id: 2, label: "Email address", type: "email", placeHolder: "example@mail.com" },
   { id: 3, label: "Subject", type: "text", placeHolder: "This is an optional" }
 ];
+
+export const blogItems: BlogItem[] = [
+  { id: 1, imgSrc: "/assets/img/blogImg1.png", alt: "Blog Image", admin: "Destiny", date: "18 jan 2025", tag: "Wood", title: "Going all-in with millennial design", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi temp" },
+  { id: 2, imgSrc: "/assets/img/blogImg2.png", alt: "Blog Image", admin: "Destiny", date: "18 jan 2025", tag: "Handmade", title: "Exploring new ways of decorating", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi temp", loading: "lazy" },
+  { id: 3, imgSrc: "/assets/img/blogImg3.png", alt: "Blog Image", admin: "Destiny", date: "18 jan 2025", tag: "Wood", title: "Handmade pieces that took time to make", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi temp", loading: "lazy" }
+]

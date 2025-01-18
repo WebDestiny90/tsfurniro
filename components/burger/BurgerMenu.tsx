@@ -29,9 +29,9 @@ const BurgerMenu = () => {
             <nav className={styles.burgerNav}>
               <ul className={styles.burgerLinkList}>
                 <li className={styles.burgerListItems}><Link className={styles.burgerLink} href="/" >Home</Link></li>
-                <li className={styles.burgerListItems}><Link className={styles.burgerLink} href="/" >Shop</Link></li>
-                <li className={styles.burgerListItems}><Link className={styles.burgerLink} href="/" >About</Link></li>
-                <li className={styles.burgerListItems}><Link className={styles.burgerLink} href="/" >Contact</Link></li>
+                <li className={styles.burgerListItems}><Link className={styles.burgerLink} href="/shop" >Shop</Link></li>
+                <li className={styles.burgerListItems}><Link className={styles.burgerLink} href="/blog" >Blog</Link></li>
+                <li className={styles.burgerListItems}><Link className={styles.burgerLink} href="/contact" >Contact</Link></li>
               </ul>
               <button className={styles.close} onClick={() => setBurgerMenuOpen(false)} >&#10006;</button>
             </nav>
